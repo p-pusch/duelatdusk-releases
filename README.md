@@ -9,19 +9,41 @@ rivals as strong as you choose.
 
 This repository only hosts the game's downloads.
 
-## Download and play (Windows, 64-bit)
+## Download and play
 
-1. Open [**Releases**](../../releases/latest) and download
-   `DuelAtDusk-X.Y.Z-windows.zip`.
+Open [**Releases**](../../releases/latest). Each release has a Windows zip and a Mac zip.
+
+### Windows (64-bit)
+
+1. Download `DuelAtDusk-X.Y.Z-windows.zip`.
 2. Unzip it and run `DuelAtDusk.exe`. It's a single file; there's nothing to
    install.
 
 The exe isn't code-signed, so Windows SmartScreen may warn the first time:
 click **More info → Run anyway**.
 
-Your rank, match history and settings are stored in
-`%APPDATA%\Godot\app_userdata\Duel at Dusk\`, so they carry over when you update
-to a new version.
+### Mac (Apple Silicon and Intel)
+
+1. Download `DuelAtDusk-X.Y.Z-macos.zip`.
+2. Unzip it on the Mac (double-click it) and drag **Duel at Dusk** to
+   Applications.
+3. Open it. The game isn't signed by Apple, so the first time macOS says it
+   can't verify the app: click **Done**.
+4. Open **System Settings → Privacy & Security**, scroll down, click
+   **Open Anyway** next to "Duel at Dusk", and confirm with your password.
+   From then on it opens normally.
+
+**Downloading the Mac version on a PC?** Don't unzip it on Windows. Windows
+drops a setting the app needs, and the Mac then refuses to open it. Copy the zip
+over unopened (USB stick, cloud drive, email to yourself) and unzip it on the Mac.
+
+### Saves
+
+Your rank, match history and settings carry over when you update to a new
+version. They're stored in:
+
+- Windows: `%APPDATA%\Godot\app_userdata\Duel at Dusk\`
+- Mac: `~/Library/Application Support/Godot/app_userdata/Duel at Dusk/`
 
 New to the game? Open **How to play** from the main menu.
 
